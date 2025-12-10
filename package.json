@@ -1,7 +1,8 @@
 {
-      "name": "Creator Dashboard for Oppia",
+      "name": "creator-dashboard-oppia",
       "version": "0.1.0",
       "private": true,
+      "type": "module",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -52,10 +53,16 @@
             "@types/react": "^19.2.7",
             "@types/react-dom": "^19.2.3",
             "@vitejs/plugin-react-swc": "^3.10.2",
+            "autoprefixer": "^10.4.16",
+            "postcss": "^8.4.32",
+            "tailwindcss": "^3.4.0",
+            "typescript": "^5.3.3",
             "vite": "^6.4.1"
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "preview": "vite preview",
+            "typecheck": "tsc --noEmit"
       }
 }
